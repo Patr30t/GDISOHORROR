@@ -27,14 +27,14 @@ public class ItemGridSpawner : MonoBehaviour
             for (int z = 0; z < gridZ; z++)
             {
                 Vector3 spawnPosition = new Vector3(x * gridSpacingOffset, 0, z * gridSpacingOffset) + gridOrigin;
-                PickAndSpawn(spawnPosition, Quaternion.identity);
+                PickAndSpawn(RandomizedPosition(spawnPosition), Quaternion.identity);
             }
         }
     }
 
     Vector3 RandomizedPosition(Vector3 position)
     {
-        Vector3 randomizedPosition = new Vector3(Random.Range(-positionRandomization.x, positionRandomization.x), Random.Range(-positionRandomization.y, positionRandomization.y) ,Random.Range(-positionRandomization.z, positionRandomization.z));
+        Vector3 randomizedPosition = new Vector3(Random.Range(-positionRandomization.x, positionRandomization.x), Random.Range(-positionRandomization.y, positionRandomization.y), Random.Range(-positionRandomization.z, positionRandomization.z)) + position;
 
         return randomizedPosition;
     }
