@@ -9,7 +9,7 @@ public class GameItemAreaSpread : MonoBehaviour
 
     public float itemXSpread  =10;
     public float itemYSpread = 0;
-    public float ItemZSpread = 10;
+    public float itemZSpread = 10;
     // Start is called before the first frame update
 
     void Start()
@@ -24,7 +24,7 @@ public class GameItemAreaSpread : MonoBehaviour
 
 void SpreadItem()
 {
-    Vector3 randPosition = new Vector3(Random.Range(-itemXSpread, itemXSpread), Random.Range(-ItemZSpread, ItemZSpread), Random.Range(-itemYSpread, itemYSpread)) + transform.position;
+    Vector3 randPosition = new Vector3(Random.Range(-itemXSpread, itemXSpread), Random.Range(-itemYSpread, itemYSpread), Random.Range(-itemZSpread, itemZSpread)) + transform.position;
     GameObject clone = Instantiate(itemsToSpread, randPosition , Quaternion.identity);
 }
    
