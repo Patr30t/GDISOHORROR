@@ -214,6 +214,49 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &416524373
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 416524374}
+  - component: {fileID: 416524375}
+  m_Layer: 0
+  m_Name: World Colours
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &416524374
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416524373}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 4.718956, y: -3.3355775, z: -3.2850513}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1975529440}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &416524375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 416524373}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f110865db460384a9320c9930fbc92c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &582638536
 GameObject:
   m_ObjectHideFlags: 0
@@ -605,36 +648,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   PlayerTransform: {fileID: 8801203517442392013}
   SmoothFactor: 0.5
---- !u!1 &1343303061
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1343303062}
-  m_Layer: 0
-  m_Name: Randomized ITem Grid Spawner
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &1343303062
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1343303061}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0.16706151, y: -0.5429816, z: 0.68176126}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_Children: []
-  m_Father: {fileID: 1975529440}
-  m_RootOrder: 5
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1523174841
 GameObject:
   m_ObjectHideFlags: 0
@@ -904,7 +917,7 @@ Transform:
   - {fileID: 582638537}
   - {fileID: 2127627517}
   - {fileID: 2110287262}
-  - {fileID: 1343303062}
+  - {fileID: 416524374}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1175,11 +1188,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ItemsToPickFrom:
   - {fileID: 2429133873734183330, guid: 76287c793ba0d144e8ddd3fdca1477b8, type: 3}
-  gridX: 8
-  gridZ: 8
-  gridSpacingOffset: 1.8
+  gridX: 3
+  gridZ: 3
+  gridSpacingOffset: 3
   gridOrigin: {x: 0, y: 0, z: 0}
-  positionRandomization: {x: 0, y: 0.5, z: 0}
+  positionRandomization: {x: 0.5, y: 0.5, z: 0}
 --- !u!4 &2110287262
 Transform:
   m_ObjectHideFlags: 0
