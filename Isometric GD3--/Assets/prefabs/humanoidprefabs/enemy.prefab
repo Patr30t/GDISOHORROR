@@ -26,7 +26,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 757509644982583636}
   m_LocalRotation: {x: -0.7071068, y: 0, z: -0, w: 0.7071067}
-  m_LocalPosition: {x: -0, y: 7.07, z: 0}
+  m_LocalPosition: {x: 0, y: 7.3, z: 0}
   m_LocalScale: {x: 46.580933, y: 42.548412, z: 69.04441}
   m_Children: []
   m_Father: {fileID: 470043365340206299}
@@ -89,10 +89,10 @@ GameObject:
   m_Component:
   - component: {fileID: 470043365340206299}
   - component: {fileID: 5793248872308149921}
-  - component: {fileID: 994800049526509087}
   - component: {fileID: 994800049526509086}
   - component: {fileID: 994800049526509084}
   - component: {fileID: 994800049526509085}
+  - component: {fileID: 4992999973854322804}
   m_Layer: 0
   m_Name: enemy
   m_TagString: Untagged
@@ -108,7 +108,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 994800049526509153}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -0.592, z: 0}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 3671642477336252350}
@@ -134,28 +134,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!195 &994800049526509087
-NavMeshAgent:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 994800049526509153}
-  m_Enabled: 1
-  m_AgentTypeID: 0
-  m_Radius: 0.92
-  m_Speed: 2
-  m_Acceleration: 8
-  avoidancePriority: 50
-  m_AngularSpeed: 121.06
-  m_StoppingDistance: 0.3
-  m_AutoTraverseOffMeshLink: 1
-  m_AutoBraking: 1
-  m_AutoRepath: 1
-  m_Height: 5.1
-  m_BaseOffset: -2.47
-  m_WalkableMask: 4294967295
-  m_ObstacleAvoidanceType: 4
 --- !u!114 &994800049526509086
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -168,7 +146,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c9d38ada5200c4293b2e0558aa65d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPos: {fileID: -8679921383154817045, guid: 5878d49930af0c1429689b752ad22d89,
+  playerPos: {fileID: 1672576074100821458, guid: f3e5fc5d93d2f4243bb23dcd1e3a01f3,
     type: 3}
 --- !u!65 &994800049526509084
 BoxCollider:
@@ -199,3 +177,25 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!195 &4992999973854322804
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 994800049526509153}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 1.82
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 118.55
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 6.68
+  m_BaseOffset: -2.3
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4

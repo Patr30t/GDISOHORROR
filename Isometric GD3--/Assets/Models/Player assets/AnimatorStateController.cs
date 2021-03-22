@@ -6,7 +6,7 @@ public class AnimatorStateController : MonoBehaviour
 {
 
     Animator anim;
-     private float vert;
+     
 
 
     // Start is called before the first frame update
@@ -18,7 +18,13 @@ public class AnimatorStateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-      vert = Input.GetAxis("Vertical");
-      anim.SetFloat("Run", vert);
+      if(Input.GetKey(KeyCode.UpArrow) || Input.GetKey(KeyCode.DownArrow))
+      {
+        anim.SetBool("IsRunning", true);
+      } else {
+        anim.SetBool("IsRunning", false);
+      }
+      }
+      
     }
-}
+
