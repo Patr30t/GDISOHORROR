@@ -146,8 +146,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a8c9d38ada5200c4293b2e0558aa65d2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playerPos: {fileID: 1672576074100821458, guid: f3e5fc5d93d2f4243bb23dcd1e3a01f3,
-    type: 3}
+  player: {fileID: 1672576074100821458, guid: f3e5fc5d93d2f4243bb23dcd1e3a01f3, type: 3}
+  enemyMesh: {fileID: 4992999973854322804}
 --- !u!65 &994800049526509084
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -175,7 +175,7 @@ Rigidbody:
   m_UseGravity: 1
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 96
   m_CollisionDetection: 0
 --- !u!195 &4992999973854322804
 NavMeshAgent:
