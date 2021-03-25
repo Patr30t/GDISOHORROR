@@ -18,18 +18,21 @@ public class AnimatorStateController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-     if (Input.GetKey("w")) 
-     {
-       anim.SetBool("IsRunning", true);
+     
+       anim.SetFloat("Vertical", Input.GetAxis("Vertical"));
+       anim.SetFloat("Horizontal", Input.GetAxis("Horizontal"));
 
-     }
+       if(Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.D))
+       {
+         anim.SetBool("IsRunning", true);
 
-     if (!Input.GetKey("w"))
-     {
-       anim.SetBool("IsRunning", false);
+       } else{
+         anim.SetBool("IsRunning", false);
+       }
+
      }
      
       
     }
-}
+
 

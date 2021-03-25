@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class walker : MonoBehaviour
 {
     
@@ -9,10 +10,14 @@ public class walker : MonoBehaviour
    float moveSpeed  =4f;
 
    Vector3 forward, right;
+   CharacterController controller;
+   Animator anim;
 
 
    void Start ()
    {
+       controller = GetComponent<CharacterController>();
+       anim = GetComponent<Animator>();
        forward = Camera.main.transform.forward;
        forward.y = 0;
        forward = Vector3.Normalize(forward);
