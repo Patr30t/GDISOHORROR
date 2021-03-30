@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Itempickup : MonoBehaviour
 {
+
+    CountdownTimer countdownTimer;
     private Inventory inventory;
     public GameObject itemIcon;
     private void Start()
