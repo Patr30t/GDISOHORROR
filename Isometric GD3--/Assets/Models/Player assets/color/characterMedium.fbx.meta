@@ -3,12 +3,17 @@ guid: ce9bbd244b0f62c49880b296a040c555
 ModelImporter:
   serializedVersion: 19301
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: skin
+    second: {instanceID: 0}
   materials:
     materialImportMode: 1
-    materialName: 0
+    materialName: 2
     materialSearch: 1
-    materialLocation: 1
+    materialLocation: 0
   animations:
     legacyGenerateAnimations: 4
     bakeSimulation: 0

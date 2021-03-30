@@ -75,6 +75,7 @@ ModelImporter:
     blendShapeNormalImportMode: 1
     normalSmoothingSource: 0
   referencedClips:
+  - 04417592ab4089947a4da1238d489846
   - a66d3f626a4bd6d47805120972f49ca5
   importAnimation: 1
   humanDescription:
@@ -95,7 +96,7 @@ ModelImporter:
     skeletonHasParents: 1
   lastHumanDescriptionAvatarSource: {instanceID: 0}
   autoGenerateAvatarMappingIfUnspecified: 1
-  animationType: 3
+  animationType: 2
   humanoidOversampling: 1
   avatarSetup: 1
   additionalBone: 0
