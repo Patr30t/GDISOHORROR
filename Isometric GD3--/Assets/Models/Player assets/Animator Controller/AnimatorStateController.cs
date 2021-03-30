@@ -6,6 +6,10 @@ public class AnimatorStateController : MonoBehaviour
 {
 
     Animator anim;
+    float velocity = 0.0f;
+    public float acceleration = 1f;
+    public float deceleration = 1f;
+    int VelocityHashNumber;
      
 
 
@@ -13,6 +17,8 @@ public class AnimatorStateController : MonoBehaviour
     void Start()
     {
         anim = GetComponent<Animator>();
+
+        VelocityHashNumber = Animator.StringToHash("Velocity");
     }
 
     // Update is called once per frame
@@ -30,9 +36,21 @@ public class AnimatorStateController : MonoBehaviour
          anim.SetBool("IsRunning", false);
        }
 
+       bool forwardPressed = Input.GetKey(KeyCode.S) || Input.GetKey(KeyCode.W) || Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D);
+
+       if (forwardPressed && velocity < 1.0f)
+       {
+         velocity += Time.deltaTime * acceleration;
+       }
+       anim.SetFloat(VelocityHashNumber, velocity);
+
+       if (!forwardPressed && velocity > 0.0f)
+       {
+         velocity -= Time.deltaTime * acceleration;
+       }
+       anim.SetFloat(VelocityHashNumber, velocity);
+
      }
      
       
     }
-
-
